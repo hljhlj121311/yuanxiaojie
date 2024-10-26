@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>班级百科 - 元宵节活动</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Lato', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #202122;
+            font-size: 14px;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 15px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #a2a9b1;
+            padding: 10px 0;
+            margin-bottom: 15px;
+        }
+        .header-content {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            text-decoration: none;
+        }
+        .search-bar {
+            display: flex;
+        }
+        .search-bar input {
+            padding: 6px;
+            border: 1px solid #a2a9b1;
+            border-right: none;
+            border-radius: 2px 0 0 2px;
+            width: 200px;
+        }
+        .search-bar button {
+            padding: 6px 12px;
+            background-color: #36c;
+            color: white;
+            border: none;
+            border-radius: 0 2px 2px 0;
+            cursor: pointer;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 3px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+        h3 {
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: none; /* 移除h3下方的线段 */
+        }
+        h4 {
+            font-size: 16px;
+            border-bottom: none;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        .toc {
+            background-color: #f8f9fa;
+            border: 1px solid #a2a9b1;
+            padding: 8px;
+            display: inline-block;
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+        .toc h2 {
+            margin-top: 0;
+            font-size: 16px;
+            border-bottom: none;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding-left: 15px;
+            margin: 5px 0;
+        }
+        .toc ul ul {
+            padding-left: 20px;
+        }
+        .toc a {
+            color: #0645ad;
+            text-decoration: none;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 13px;
+        }
+        th, td {
+            border: 1px solid #a2a9b1;
+            padding: 6px;
+        }
+        th {
+            background-color: #eaecf0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .infobox {
+            float: right;
+            margin: 0 0 15px 15px;
+            border: 1px solid #a2a9b1;
+            padding: 8px;
+            background-color: #f8f9fa;
+            width: 270px;
+            font-size: 13px;
+        }
+        .infobox h3 {
+            margin-top: 0;
+            text-align: center;
+        }
+        .infobox img {
+            display: block;
+            margin: 0 auto;
+            max-width: 250px;
+        }
+        .uninfobox {
+            float: left;
+            margin: 15px 15px 0 0;
+            border: 1px solid #a2a9b1;
+            padding: 8px;
+            background-color: #f8f9fa;
+            width: 270px;
+            font-size: 13px;
+        }
+        .uninfobox img {
+            display: block;
+            margin: 0 auto;
+            max-width: 250px;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            border-top: 1px solid #a2a9b1;
+            padding: 15px 0;
+            margin-top: 15px;
+            text-align: center;
+            font-size: 12px;
+            color: #72777d;
+        }
+        @media (max-width: 768px) {
+            .infobox {
+                float: none;
+                width: 100%;
+                margin: 15px 0;
+            }
+            .header-content {
+                flex-direction: column;
+            }
+            .search-bar {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 页面内容保持不变 -->
+    <div class="header">
+        <div class="header-content">
+            <a href="#" class="logo">12班班级百科</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>元宵节活动</h1>
+        
+        <div class="infobox">
+            <h3>元宵节活动</h3>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Crect width='200' height='200' fill='%23ddd'/%3E%3Ctext x='50%25' y='50%25' font-size='18' text-anchor='middle' alignment-baseline='middle' font-family='Arial, sans-serif' fill='%23555555'%3E示例图片%3C/text%3E%3C/svg%3E" alt="示例图片">
+            <table>
+                <tr>
+                    <th>时间</th>
+                    <td>2024年2月</td>
+                </tr>
+                <tr>
+                    <th>地点</th>
+                    <td>操场</td>
+                </tr>
+                <tr>
+                    <th>发起人</th>
+                    <td>学校</td>
+                </tr>
+            </table>
+        </div>
+
+        <p>元宵节活动，是一次第二学期“欢度元宵，奋进新学期”为主题的初2025届元宵游学活动。活动在操场举行，项目多样，供学生自主选择。每完成一个活动任务即可获得印章，集满足够的印章后，可兑换零食、抱枕等奖品。</p>
+
+        <div class="toc">
+            <h2>目录</h2>
+            <ul>
+                <li><a href="#section1">1. 活动内容</a>
+                    <ul>
+                        <li><a href="#section1-1">1.1 早期发展</a></li>
+                        <li><a href="#section1-2">1.2 现代演变</a></li>
+                    </ul>
+                </li>
+                <li><a href="#section2">2. 主要特征</a>
+                    <ul>
+                        <li><a href="#section2-1">2.1 核心属性</a></li>
+                        <li><a href="#section2-2">2.2 功能特点</a></li>
+                    </ul>
+                </li>
+                <li><a href="#section3">3. 影响和应用</a>
+                    <ul>
+                        <li><a href="#section3-1">3.1 社会影响</a></li>
+                        <li><a href="#section3-2">3.2 技术应用</a></li>
+                    </ul>
+                </li>
+                <li><a href="#section4">4. 未来发展</a>
+                    <ul>
+                        <li><a href="#section4-1">4.1 研究趋势</a></li>
+                        <li><a href="#section4-2">4.2 潜在挑战</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <h2 id="section1">1. 历史背景</h2>
+        <p>这部分内容详细介绍了示例主题的历史背景。包括其起源、发展过程中的重要里程碑，以及在不同时期的演变。这些历史信息有助于读者更好地理解该主题的重要性和当前状态。</p>
+
+        <h3 id="section1-1">1.1 早期发展</h3>
+        <p>本小节讨论示例主题的早期发展阶段，包括其最初的概念形成和早期的应用尝试。</p>
+
+        <h3 id="section1-2">1.2 现代演变</h3>
+        <p>这一部分探讨示例主题在现代社会中的演变过程，重点关注近几十年来的重大突破和变革。</p>
+
+        <h2 id="section2">2. 主要特征</h2>
+        <p>本节讨论示例主题的核心特征和属性。这可能包括其独特的性质、组成部分或运作方式。通过详细说明这些特征，读者可以全面了解该主题的本质和重要性。</p>
+
+        <h3 id="section2-1">2.1 核心属性</h3>
+        <p>详细描述示例主题的核心属性，这些属性构成了其基本特征和本质。</p>
+
+        <h3 id="section2-2">2.2 功能特点</h3>
+        <p>探讨示例主题的主要功能和特点，解释这些功能如何运作以及它们的重要性。</p>
+
+        <table>
+            <tr>
+                <th>特征</th>
+                <th>描述</th>
+                <th>重要性</th>
+            </tr>
+            <tr>
+                <td>特征1</td>
+                <td>特征1的详细描述</td>
+                <td>高</td>
+            </tr>
+            <tr>
+                <td>特征2</td>
+                <td>特征2的详细描述</td>
+                <td>中</td>
+            </tr>
+            <tr>
+                <td>特征3</td>
+                <td>特征3的详细描述</td>
+                <td>低</td>
+            </tr>
+        </table>
+
+        <h2 id="section3">3. 影响和应用</h2>
+        <p>这一部分探讨了示例主题在各个领域的影响和实际应用。它可能包括在科学、技术、社会或文化等方面的具体案例，以及该主题如何改变或塑造了这些领域。通过这些例子，读者可以理解该主题的实际意义和广泛影响。</p>
+
+        <h3 id="section3-1">3.1 社会影响</h3>
+        <p>分析示例主题对社会各方面的影响，包括经济、文化、教育等领域。</p>
+
+        <h3 id="section3-2">3.2 技术应用</h3>
+        <p>探讨示例主题在各种技术领域的具体应用，以及这些应用如何推动技术进步。</p>
+
+        <h2 id="section4">4. 未来发展</h2>
+        <p>最后，本节讨论了示例主题的未来发展趋势和潜在方向。这可能包括当前的研究进展、预测的技术突破，以及可能出现的新应用领域。通过展望未来，读者可以了解该主题的持续重要性和潜在影响。</p>
+
+        <h3 id="section4-1">4.1 研究趋势</h3>
+        <p>概述当前和未来可能的研究方向，包括正在进行的重要研究项目和预期的突破。</p>
+
+        <h3 id="section4-2">4.2 潜在挑战</h3>
+        <p>这是一个示例段落。点击<a href="https://www.example.com" target="_blank">这里</a>可以在新标签页中打开一个示例网站。</p>
+    </div>
+
+    <div class="footer">
+        <p>本页面最后编辑于2024年几月几日 (星期几) 不知道（UTC）。</p>
+        <p>本站的全部文字在知识共享 署名-相同方式共享 3.0协议之条款下提供，附加条款亦可能应用。</p>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+          </html>
